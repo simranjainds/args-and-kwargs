@@ -9,3 +9,20 @@ har=["simran","gaurang","meena","rakesh"]
 simi={"simran":"tt","gaurang":"basketball","meena":"carrom","rakesh":"batminton"}
 normal="4 members in the family"
 funargs(normal,*har,**simi)
+
+
+
+#how to measure time
+import time
+#to measure the execution time of the program
+initial = time.time()
+k=0
+while(k<45):
+    print("simran is talented")
+    k+=1
+print("while loop ran in",time.time()-initial,"seconds")
+
+initial2=time.time()
+for i in range(45):
+    print("simran is talented")
+print("for loop took",time.time()-initial2,"seconds")
